@@ -18,7 +18,7 @@ public class GameMtk extends Game {
         daftarSoal.add(new SoalModel("5) Sebuah mobil menempuh 120 km dalam 2 jam. Berapa kecepatan rata-ratanya (km/jam)?", "60"));
     }
 
-    // POLYMORPHISM: Kita ubah cara cek jawaban khusus MTK (Validasi Angka)
+    // POLYMORPHISML: Kita ubah cara cek jawaban khusus MTK (Validasi Angka)
     @Override
     public boolean cekJawaban(int index, String jawabanUser) {
         try {

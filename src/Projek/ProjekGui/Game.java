@@ -67,6 +67,9 @@ public boolean cekJawaban(int index, String jawabanUser) {
     protected class SoalModel {
         String tanya;
         String jawab;
-        public SoalModel(String t, String j) { this.tanya = t; this.jawab = j; }
+        public SoalModel(String t, String j) {
+             this.tanya = t; 
+             this.jawab = j;
+             }
     }
 }

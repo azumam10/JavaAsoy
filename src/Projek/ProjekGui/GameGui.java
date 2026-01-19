@@ -6,12 +6,12 @@ import java.util.List;
 import javax.swing.*;
 
 public class GameGui extends JFrame {
-    
+
     // Components
     private JTextArea textArea;
     private JTextField inputField;
     private JButton btnSubmit;
-    
+
     // Data Game
     private Pemain pemainSaatIni;
     private Game activeGame;
@@ -37,6 +37,7 @@ public class GameGui extends JFrame {
         JPanel panelBawah = new JPanel(new BorderLayout());
         inputField = new JTextField();
         btnSubmit = new JButton("JAWAB");
+        btnSubmit.setBackground(Color.GREEN);
         btnSubmit.addActionListener(e -> prosesJawaban());
         
         panelBawah.add(inputField, BorderLayout.CENTER);
@@ -52,7 +53,7 @@ public class GameGui extends JFrame {
     private void mulaiSesiBaru() {
         // 1. Input Nama
         String nama = JOptionPane.showInputDialog(this, "Masukkan Nama Peserta Baru:");
-        if (nama == null || nama.isEmpty()) nama = "Unknown";
+        if (nama == null || nama.isEmpty()) nama = "ORANG GILA";
         
         // Bikin Object Pemain BARU (Reset skor, reset identitas)
         pemainSaatIni = new Pemain(nama);
